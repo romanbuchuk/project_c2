@@ -223,3 +223,9 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+/.idea/modules.xml
+/.idea/git_toolbox_blame.xml
+/.idea/.gitignore
+/.idea/git_toolbox_prj.xml
+/.idea/project_c2_remote.iml
+/.idea/vcs.xml
