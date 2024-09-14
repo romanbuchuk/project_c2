@@ -1,0 +1,28 @@
+{
+  "name": "project_c2",
+  "version": "1.0.0",
+  "description": "My awesome project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "eslint"
+  ],
+  "author": "romanbuchuk",
+  "license": "ISC",
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.26.2",
+    "styled-components": "6.1.13"
+  },
+  "devDependencies": {
+    "cypress": "13.14.2",
+    "eslint": "9.10.0",
+    "lint-staged": "15.2.10",
+    "prettier": "3.3.3",
+    "storybook": "8.3.0"
+  }
+}
