@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "echo \"Please provide entry file\" && exit 1",
-    "build": "webpack build -c config/webpack.js",
-    "start:dev": "webpack serve -c config/webpack.js",
+    "build": "webpack build -c config/webpack.production.config.js",
+    "build:dev": "webpack build -c config/webpack.development.config.js",
+    "start:dev": "webpack serve -c config/webpack.development.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -29,14 +30,24 @@
     "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
     "cypress": "13.14.2",
-    "eslint": "9.10.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-webpack": "^0.13.9",
+    "eslint-plugin-cypress": "^3.5.0",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-react": "^7.37.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unicorn": "^55.0.0",
     "html-webpack-plugin": "^5.6.0",
     "lint-staged": "15.2.10",
-    "prettier": "3.3.3",
+    "mini-css-extract-plugin": "^2.9.1",
+    "prettier": "^3.3.3",
     "storybook": "8.3.0",
     "style-loader": "^4.0.0",
     "webpack": "5.94.0",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "5.1.0"
+    "webpack-dev-server": "5.1.0",
+    "webpack-merge": "^6.0.1"
   }
 }

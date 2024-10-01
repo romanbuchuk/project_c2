@@ -10,22 +10,8 @@ const basicConfig = {
   plugins: [new HtmlWebPackPlugin({
     template: path.resolve(__dirname, '../templates/index.html'),
   })],
-  mode: 'development',
   module: {
     rules: [
-      {
-        test: /\.css$/i,
-        use: ["style-loader",
-          {
-            loader: "css-loader",
-            options: {
-              modules: {
-                mode: "local",
-                localIdentName: `[name]_[local]--[hash:base64:5]`
-              }
-            }
-          },],
-      },
       {
         test: /\.(js|jsx)$/i,
         exclude: /node_modules/,
