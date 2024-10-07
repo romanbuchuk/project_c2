@@ -3,7 +3,6 @@ import React from 'react';
 
 import styles from './App.css';
 // import * as styles from './App.css';
-
 const App = () => {
     return (
         <div className={styles.main} data-testid="app">
