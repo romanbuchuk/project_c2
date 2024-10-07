@@ -8,7 +8,10 @@
     "build": "webpack build -c config/webpack.production.config.js",
     "build:dev": "webpack build -c config/webpack.development.config.js",
     "start:dev": "webpack serve -c config/webpack.development.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:open": "cypress open",
+    "test:ct": "cypress run --component --browser chrome",
+    "prepare": "husky"
   },
   "keywords": [
     "React",
@@ -17,6 +20,7 @@
   "author": "romanbuchuk",
   "license": "ISC",
   "dependencies": {
+    "husky": "^9.1.6",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-router-dom": "6.26.2",
@@ -26,10 +30,13 @@
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
     "@babel/preset-react": "^7.24.7",
+    "@cypress/code-coverage": "^3.13.2",
+    "@istanbuljs/nyc-config-babel": "^3.0.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
     "babel-loader": "^9.2.1",
+    "babel-plugin-istanbul": "^7.0.0",
     "css-loader": "^7.1.2",
-    "cypress": "13.14.2",
+    "cypress": "^13.14.2",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-webpack": "^0.13.9",
@@ -40,7 +47,7 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-unicorn": "^55.0.0",
     "html-webpack-plugin": "^5.6.0",
-    "lint-staged": "15.2.10",
+    "lint-staged": "^15.2.10",
     "mini-css-extract-plugin": "^2.9.1",
     "prettier": "^3.3.3",
     "storybook": "8.3.0",
