@@ -1,0 +1,21 @@
+.container {
+    margin: 2rem 0;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    img {
+        width: 4rem;
+        object-fit: contain;
+    }
+
+    h1 {
+        margin: 0;
+        color: #f3e248;
+    }
+
+    p {
+        margin: 0;
+        color: #dbd7b1;
+    }
+}
