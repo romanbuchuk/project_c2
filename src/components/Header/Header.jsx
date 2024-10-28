@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Header.css';
 
 // function Header() {};
-const Header = () => (
+export const Header = () => (
     <header className={styles.container}>
         <div>
             <h1 className="header">Vanilla JavaScript</h1>

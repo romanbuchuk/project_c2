@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-node_modules/.bin/lint-staged
+. "$(dirname "$0")/h"
