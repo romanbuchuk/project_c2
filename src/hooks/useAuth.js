@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const useAuth = () => {
-    const [users, setUsers] = useState(null);
+    const [users, setUsers] = useState();
     const [error, setError] = useState();
 
     const sendRequest = (requestBody) => {
@@ -10,8 +10,8 @@ const useAuth = () => {
             body: JSON.stringify(requestBody),
         }).then((response) => {
             if (response.ok) {
-                return response.json().then((resUsers) => {
-                    setUsers(resUsers);
+                return response.json().then((responceUsers) => {
+                    setUsers(responceUsers);
                 });
             }
 
@@ -20,9 +20,9 @@ const useAuth = () => {
     };
 
     return {
+        sendRequest,
         error,
         users,
-        sendRequest,
     };
 };
 
