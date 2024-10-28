@@ -1,10 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const useAuth = () => {
     const [users, setUsers] = useState(null);
     const [error, setError] = useState();
-
-    useEffect(() => {});
 
     const sendRequest = (requestBody) => {
         fetch('http://localhost:3000/users/123123/hgkdhfgk', {
