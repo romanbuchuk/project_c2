@@ -12,8 +12,7 @@
     "lint:fix": "eslint --ignore-path .gitignore --fix --ext .js,.jsx --max-warnings 0 ./src",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:open": "cypress open",
-    "test:ct": "cypress run --component --browser chrome",
-    "prepare": "husky"
+    "test:ct": "cypress run --component --browser chrome"
   },
   "keywords": [
     "React",
